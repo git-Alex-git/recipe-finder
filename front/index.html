@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <div class="logo">P</div>
+                <div class="links">
+                    <a href="">Home</a>
+                    <a href="">Favorite</a>
+                    <a href="">Sign in</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="blockText">
+                <h1 class="mainWords">Before cooking - check the recipe</h1>
+                <p class="description">We find real recipes online and adapt them to your ingredients, rather than
+                    inventing them from scratch.</p>
+            </div>
+            <div class="placeForAdding">
+                <label for="input">What's at hand</label>
+                <div class="forProducts"> </div>
+                <div class="inputSection">
+                    <div class="inputAndBtn">
+                        <input type="text" class="inputForIng" placeholder="Add an ingredient, for example, chicken">
+                        <div class="divSuggestion"></div>
+                        <button class="btnAddIng">Add</button>
+                    </div>
+                    <button class="findRec">Find recipe</button>
+                </div>
+            </div>
+            <div class="workSteps">
+                <div class="step1">
+                    <span class="num">01</span>
+                    <hr>
+                    <strong>
+                        Add your ingredients
+                    </strong>
+                    <p>
+                        Tell us what ingredients you have on hand. We'll use your list to find recipes that match what
+                        you have.
+                    </p>
+                </div>
+                <div class="step2">
+                    <span class="num">02</span>
+                    <hr>
+                    <strong>
+                        Find matching recipes
+                    </strong>
+                    <p>
+                        We search real recipes online and compare their ingredients with yours to find the best matches.
+                    </p>
+                </div>
+                <div class="step3">
+                    <span class="num">03</span>
+                    <hr>
+                    <strong>
+                        Choose your recipe
+                    </strong>
+                    <p>
+                        Explore matching recipes, check how well they fit your ingredients, and follow the original
+                        recipe for cooking instructions.
+                    </p>
+                </div>
+            </div>
+            <div class="sectionResult" hidden>
+                <h2>Found based on your ingredients</h2>
+                <span class="sources"></span>
+                <div class="foundRecipes"></div>
+            </div>
+            <div class="pickedRecip" hidden>Select a recipe above to see the breakdown.</div>
+
+        </main>
+    </div>
+    <script type="module" src="/js/script.js"></script>
+</body>
+
+</html>
